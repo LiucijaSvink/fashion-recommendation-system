@@ -84,8 +84,9 @@ Possible applications include:
 ## Project structure
 
 ```text
-pipeline.ipynb          End-to-end case study: retrieval, ranking, evaluation
-eda.ipynb               Exploratory analysis of purchase behaviour
+notebook/
+  pipeline.ipynb        End-to-end case study: retrieval, ranking, evaluation
+  eda.ipynb             Exploratory analysis of purchase behaviour
 configs/config.json     Configuration of the shipped model
 
 src/recolib/            Project-agnostic recommender library
@@ -123,7 +124,7 @@ export HM_WORK_DIR=~/hm_data             # generated folds, features, models
 Run the main pipeline from:
 
 ```text
-pipeline.ipynb
+notebook/pipeline.ipynb
 ```
 
 The notebook covers candidate retrieval, candidate union, feature engineering, ranking, and evaluation.
@@ -137,7 +138,7 @@ recolib run --config configs/config.json
 Exploratory analysis is available in:
 
 ```text
-eda.ipynb
+notebook/eda.ipynb
 ```
 
 It reads the prepared tables, so run the pipeline's first stage before it

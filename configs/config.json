@@ -1,0 +1,66 @@
+{
+  "raw_dir": "~/HM_dataset/hm_data",
+  "out_dir": "~/hm_data",
+  "fold_prefix": "fold",
+  "submission_path": "submission.csv",
+  "artifacts": {},
+  "window_end": "2020-09-22",
+  "train_weeks": 6,
+  "val_weeks": 1,
+  "n_folds": 6,
+  "max_candidates": null,
+  "seed_weeks": 4,
+  "repurchase_top_n": 80,
+  "itemcf_top_n": 100,
+  "itemcf_neighbors": 50,
+  "product_code_top_n": 30,
+  "popularity_top_n": 100,
+  "popularity_weeks": 4,
+  "als_top_n": 80,
+  "als_rank": 64,
+  "als_iters": 10,
+  "feature_chunks": 4,
+  "user_recent_weeks": 12,
+  "item_windows": [
+    1,
+    4,
+    12
+  ],
+  "affinity_keys": [
+    [
+      "product_code",
+      "pcode"
+    ],
+    [
+      "product_type_no",
+      "ptype"
+    ],
+    [
+      "department_no",
+      "dept"
+    ],
+    [
+      "product_group_name",
+      "pgroup"
+    ]
+  ],
+  "train_folds": [
+    "fold_1",
+    "fold_2",
+    "fold_3",
+    "fold_4",
+    "fold_5"
+  ],
+  "negatives_per_positive": 15,
+  "lgbm_params": {},
+  "eval_k": 12,
+  "eval_sample_users": null,
+  "seed": 42,
+  "driver_memory": "12g",
+  "shuffle_partitions": 400,
+  "schema": {
+    "user": "customer_id",
+    "item": "article_id",
+    "date": "t_dat"
+  }
+}

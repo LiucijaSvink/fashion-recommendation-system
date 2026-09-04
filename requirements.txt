@@ -1,0 +1,14 @@
+# Runtime
+pyspark>=3.5
+lightgbm>=4.0
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+pyarrow>=12.0
+matplotlib>=3.7
+
+# Notebooks
+ipykernel>=6.0
+
+# Development
+pytest>=7.0
